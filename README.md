@@ -179,21 +179,37 @@
 
 - Авторизация по `HTTPS`:
     - Логинимся на `github.com`, и заходим в настройки
+
         ![1](./static/1.png)
+        
         - Переходим к пункту `Developer settings`
+        
         ![2](./static/2.png)
+        
         - Там выбираем `Personal access tokens` > `Tokens (classic)`
+        
         ![3](./static/3.png)
+        
         - Нажимаем на кнопку `Generate new token` > `Generate new token (classic)`
+        
         ![4](./static/4.png)
+        
         - Выбираем срок жизни токена (например - `no expiration`)
+        
         ![5](./static/5.png)
+        
         - Настраиваем права токена (например, если вы хотите взамиодействовать только с репозиториями, выберите `repo`)
+        
         ![6](./static/6.png)
+        
         - Нажимаем на кнопку `Generate token`
+        
         ![7](./static/7.png)
+        
         - Скопируйте полученный токен и сохраните его
+        
         ![8](./static/8.png)
+      
     - Теперь добавим удалённый репозиторий в Git:
         ```shell
         git remote add http-origin https://github.com/username/repository.git
